@@ -7,6 +7,8 @@ public class hola {
 
 		
 		System.out.print("Hola");
+		
+		
 	}
 
 }
