@@ -12,6 +12,7 @@ public class Hora {
 		int h;
 		int m;
 		int s;
+		int dias=0;
 		
 		System.out.println("dime la hora");
 		h = sc.nextInt();
@@ -33,12 +34,13 @@ public class Hora {
 			h++;
 			
 		}
-		if (h >= 24) {
+		while (h >= 24) {
 			
 			h = h -24;
+			dias++;
 		}
 		
-		System.out.printf("dentro de un segundo la hora sera %02d : %02d : %02d", h, m, s);
+		System.out.printf("Han pasado %d dia/s y dentro de un segundo la hora sera %02d : %02d : %02d del dia %d ",dias, h, m, s, (dias+1));
 
 		sc.close();
 	}
