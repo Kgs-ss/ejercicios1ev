@@ -77,7 +77,7 @@ public class OrdenarDosTablasEnUnaTercera {
 				System.out.println("c" + j +": " +c[j] );
 							
 			}
-		for (int l=0;l<b.length;l++) { 			//recorre el array b
+		for (int l=0;l<b.length;l++) { 			//*********************** recorre el array b
 			
 			for (int m=0;m<c.length;m++) {		//recorre el array c
 				
@@ -99,7 +99,7 @@ public class OrdenarDosTablasEnUnaTercera {
 
 			}
 			
-		}
+		}									//******************************
 		
 		for (int x=0;x<c.length;x++) {  //mostramos el resultado final
 			
