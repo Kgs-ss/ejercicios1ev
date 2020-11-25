@@ -84,35 +84,45 @@ public class OrdenarDosTablasEnUnaTercera {
 			
 			System.out.printf("a: %d    b:%d\n",a[k],b[k]);
 		}
-	
-		for (int j=0;j<c.length/2;j++) {	//rellenamos la 1ra parte del bucle c que seran las 2 bucles juntos, como ya viene ordeanado simplemente asignamos los valores de a a las 10 primeras posiciones de c
-				
-				c[j]=a[j];
-				System.out.println("c" + j +": " +c[j] );
-							
-			}
-		for (int l=0;l<b.length;l++) { 			//*************************recorre el array b
+		
+		
+		//rellenamos el array completo
+		
+		for (int x= 0; x < c.length;x++) {
 			
-			for (int m=0;m<c.length;m++) {		//recorre el array c
+			if (x <= 9) {
 				
-				
-				if (b[l]<=c[m]) {				//comprueba si el valor de b[l] es menor que alguno de los valores de c[]
-					
-					for (int t = c.length-2; t > m; t--) {		//mueve una posicion el array dejando un valor "libre", duplicado para eliminarlo
-						
-						c[t+1] = c[t];
-					}			
-									//una vez ha movido lo necesario introduce en la posicion de c[] el valor de b[]		
-					
-				}
-					
-					c[m] = b[l];			//******************************si no hay ningun valor en c[] menor que b[l] lo introduce al final de c 
-
+				c[x] = a [x];
 			}
+			
+			else
+				
+				c[x] = b[x-10];
 			
 		}
 		
-		for (int x=0;x<c.length;x++) {  //mostramos el resultado final
+		//ahora lo ordenamos
+		
+		int l = c.length;
+
+		for (int i = 0; i < l; i++){
+			for (int j = 0; j < l -1 -i; j++){
+
+				if ( c[j] > c[j + 1]) {
+
+					int aux = c[j];
+					c[j] = c[j+1];
+					c[j+1] = aux;
+				
+				}
+
+			}
+
+		}
+		
+		//mostramos el resultado final
+		
+		for (int x=0;x<c.length;x++) {  
 			
 			System.out.printf("c%d: %d\n",x, c[x]);
 		}
