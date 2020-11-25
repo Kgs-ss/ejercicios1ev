@@ -22,26 +22,18 @@ public class robot {
 					   {"_________", "@@@@@@@@@","LLLLLLLLL","WWWWWWWWW"}
 		};
 		
-	
+		String [] parte = {"pelo", "ojos","nariz","boca", "barbilla"}; 
 		
 		for (int i = 0; i < v.length;i++) {
 			
-			if (i == 0)
-				System.out.println("Seleccione pelo");
-			if (i == 1)
-				System.out.println("Seleccione ojos");
-			if (i == 2)
-				System.out.println("Seleccione nariz");
-			if (i == 3)
-				System.out.println("Seleccione boca");
-			if (i == 4)
-				System.out.println("Seleccione barbilla");
 			
 			for (int j=0;j < v[j].length;j++) {
 				
 				System.out.println(j + " : " + v[i][j] );
 			}
 			
+			System.out.println("Seleccione " + parte[i]);
+		
 			eleccion = sc.nextInt();
 			
 			if (i == 0)

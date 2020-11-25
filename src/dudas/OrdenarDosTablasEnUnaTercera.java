@@ -104,8 +104,14 @@ public class OrdenarDosTablasEnUnaTercera {
 		//ahora lo ordenamos
 		
 		int l = c.length;
-
+		
+		//recorremos el total del array
+		
 		for (int i = 0; i < l; i++){
+			
+			//recorremos comprobando todos los valores y reasignando los numeros 
+			//en cada iteracion coloca un numero, -i porque sera un numero menos a coloca y recorrera solo lo necesario, bloques
+			
 			for (int j = 0; j < l -1 -i; j++){
 
 				if ( c[j] > c[j + 1]) {
