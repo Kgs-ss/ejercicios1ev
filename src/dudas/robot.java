@@ -16,7 +16,7 @@ public class robot {
 		String boca = "boca";
 		String barbilla = "barbilla";
 			
-		String [][] v = {{"WWWWWW","\\\\\\///////","@@@@@@@@@","__#####__","77777777"},
+		String [][] v = {{"WWWWWW","\\\\\\///////","@@@@@@@@@","__#####__","777777777"},
 					   {"|  o o  |","| (. .) |", "|  O O  |","| \\  /  |"},
 					   {"|   G   |","|   J   |", "G   k   G","!   L   !"},
 					   {"@@@---@@@","|  ___  |", "|  ---  |","|  uuu  |"},
@@ -25,6 +25,7 @@ public class robot {
 		
 		//array con las variables para trabajar con ellas
 		String [] variables = {pelo, ojos, nariz, boca, barbilla};
+		
 		//recorremos los arrays principales
 		for (int i = 0; i < v.length;i++) {	
 			//recorremos el interno mostrando los valores almacenados
