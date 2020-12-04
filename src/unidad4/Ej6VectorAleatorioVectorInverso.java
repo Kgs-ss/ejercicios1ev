@@ -22,6 +22,7 @@ public class Ej6VectorAleatorioVectorInverso {
 		for (int i = 0; i < aleatorio.length; i++) {
 
 			numRandom = rnd.nextInt(100 - (-100) + 1) - 100;
+			
 			// comprobamos que no esta el numero en ninguna de las posiciones anteriores
 			for (int correcto = 0; correcto < i; correcto++) {
 
