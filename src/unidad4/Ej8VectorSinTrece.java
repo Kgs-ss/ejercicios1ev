@@ -42,6 +42,7 @@ public class Ej8VectorSinTrece {
 		int contadorSiete;
 		// indica si sumaSiete es = a 7
 		boolean siete = false;
+		int salta = 0;
 
 		// pedimos un numero que debe estar entre 10 y 200
 		do {
@@ -118,6 +119,13 @@ public class Ej8VectorSinTrece {
 
 					sumados += 13;
 
+				}
+				//Faltaba decirle que hace cuando es distinto de 7 pero no quedan mas de trece espacios hasta el final
+				else if ((sumados + 13) >= vector.length &&  sumaSiete != 7) {
+					
+					salta = vector.length - sumados;
+					sumados = sumados + salta;
+					
 				}
 				// si es siete debemos marcarlo para usarlo luego en la comprobacion de los
 				// numeros de la suma
