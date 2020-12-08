@@ -83,9 +83,9 @@ public class Ej13MatrizAleatoria {
 		int[] vectorColumnas;
 		int sumaColumnas;
 		vectorColumnas = new int[colum[0].length];
-		System.out.println(vectorColumnas.length + " tamaño");
-
-		for (int i = 0; i < colum[i].length; i++) {
+		//System.out.println(vectorColumnas.length + " tamaño");
+		//aqui igualar a tamaño de i MALA JUGADA joder, igualar a un tamaño FIJOOOOOOOOOO!!!!!!!!!! fk
+		for (int i = 0; i < colum[0].length; i++) {
 
 			sumaColumnas = 0;
 			for (int j = 0; j < colum.length; j++) {
