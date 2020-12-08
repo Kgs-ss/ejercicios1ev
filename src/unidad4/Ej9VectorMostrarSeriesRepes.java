@@ -45,7 +45,7 @@ public class Ej9VectorMostrarSeriesRepes {
 		// recoremos el vector
 		for (int j = 0; j < vector.length - 1; j++) {
 			// por cada numeros miramos cuantas veces se repite y vamos aumentando j para
-			// que no compruebe de nuevo
+			// que no compruebe de nuevo el mismo numero
 			while (vector[j] == vector[j + 1] && j < vector.length) {
 				estaRepetido = true;
 				cuentaRepetidos++;
