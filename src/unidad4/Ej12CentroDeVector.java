@@ -50,6 +50,7 @@ public class Ej12CentroDeVector {
 
 		// uno impar si, estara en la mitad del .length exactamente
 		else
+			//para retornar un entero covertido en String
 			return String.valueOf((indice.length / 2));
 	}
 
